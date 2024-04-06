@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+      /* contact*/
+ /* Style inputs */
+ input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  size: 10px;
+  background-color:#D7C0AE;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 45%;
+  margin-top: 6px;
+  padding: 20px;
+  font-size:18px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.add-mail{
+
+  display: flex;
+  margin-left: 10px;
+}
+@font-face{
+    font-family: mg;
+   
+    src: url("f1.ttf.ttf");
+  }
+  #h11{
+    font-family:mg;
+    font-size: 30px;
+  }
+  /* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:cursive;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(15, 19, 19);
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+  
+  /* LOGO */
+  .logo {
+    font-size:20px;
+    display:flex;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 17.4px;
+    margin-left: 630px; 
+  }
+  .ck1{
+  margin-left: 600px;
+  }
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  .menu li {
+    padding: 5px 14px;
+  }
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+/*contact end */
+    </style>
+    <link href= rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    </head>
+    <body background="c:\Users\91965\Documents\CSS\css mp\mpp_files\biryani.webp">
+      <form action="https://formspree.io/f/mjvqlqwe" method="post">
+        
+  <nav class="navbar">
+    <!-- LOGO -->
+   <div class="logo"><u>RESTURANT <i class="fa-solid fa-utensils"></i></u></div>
+   
+       <!-- NAVIGATION MENU -->
+       <ul class="nav-links">
+      
+      <!-- USING CHECKBOX HACK -->
+      <div class="ck1">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+     </div>
+         <!-- NAVIGATION MENUS -->
+         <div class="menu">
+           <!--<i class="fa-light fa-user-chef fa-xs" style="color: #ffffff;"></i>-->
+           <li><a href="C:\Users\91965\Documents\CSS\css mp\CSSMP.HTML">Home <i class="fa-solid fa-house-chimney" style="color: #ffffff;"></i></a></li>
+           <li><a href="C:\Users\91965\Documents\CSS\css mp\ab.html">About Us <i class="fa-regular fa-address-card" style="color: #f5f5f5;"></i></a></li>
+           <li><a href="C:\Users\91965\Documents\CSS\css mp\mainmenu.html">Menu <i class="fa-solid fa-bars" style="color: #ffffff;"></i></a></li>
+           <li><a href="C:\Users\91965\Documents\CSS\css mp\mpp.html">Specialtie's <i class="fa-sharp fa-solid fa-star" style="color: #fcfcfc;"></i></a></li>
+           <li><a href="C:\Users\91965\Documents\CSS\css mp\contact.html">Contact Us <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i></a></li>
+         </div>
+       </ul>
+     </nav>
+            <div class="container" >
+              
+          <div style="text-align:center">
+            <div class="heading">
+                <h1 class="h1-responsive team-title text-center shadow-sm py-2">CONTACT US <i class="fa-regular fa-address-book"></i> </h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="C:\Users\91965\Documents\CSS\css mp\mpp_files\open.avif" style="width:90%" height="50%" >
+              <center> <h1 class="h1-responsive team-title text-center shadow-sm py-2" id="h11"style="padding-left:2px; ">You Can Contact  Us on:
+                </h1>
+              <a href="facebook.com"><i class="fa-brands fa-facebook fa-xl" style="color:brown;" ></i></a>
+              <a href="instagram.com"><i class="fa-brands fa-instagram fa-xl" style="color:brown;"></i></a>
+              <a href="whatsapp.com"><i class="fa-brands fa-whatsapp fa-xl" style="color:brown"></i></a>
+              <a href="twitter.com"><i class="fa-brands fa-twitter fa-xl" style="color:brown;"></i></a>
+              <a href="google.com"><i class="fa-brands fa-google fa-xl" style="color:brown;"></i></a></center>
+             <br> <div class="add-mail">
+                <div class="hero-content">
+                <h1 class="h1-responsive team-title text-center shadow-sm py-2" id="h11"style="padding-left:2px;">Address
+                 <i class="fa-solid fa-location-dot"style="color: #042362;"></i></h1>
+                <p>Shop no.3, Hari Niwas, Ganesh Gully,<br>Dr Baba Saheb Ambedkar Rd,<br> Lal Baug, Mumbai, Maharashtra 400012</p>
+                </div>
+                <div class="hero-content">
+                  <h1 class="h1-responsive team-title text-center shadow-sm py-2" id="h11"style="padding-left:80px;"> Email Id: <i class="fa-solid fa-square-envelope" style="color: #042362";></i></h1>
+                  <p style="padding-left: 80px;">saltandpepper@gmail.com </p>
+                      </div>
+                    </div>
+            </div>
+            <div class="column">
+              <form name="my-form" method="POST">
+                <label for="fname"><b>First Name <i class="fa-solid fa-file-signature"></i></label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <br><label for="lname">Last Name <i class="fa-solid fa-file-signature"></i></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                <br><label for="email">Email <i class="fa-solid fa-square-envelope" ></i></label>
+                 <input type="text" id="email" name="email" placeholder="Your Email" required pattern="[^a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$">
+               <label for="email">Country <i class="fa-solid fa-earth-americas"></i></label>
+                <select id="country" name="country">
+                  <option value="australia">India</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              <label for="subject">Message <i class="fa-solid fa-message"></i></b></label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+               
+          </div>
+        </div>
+      </div>
+
+      </form>
+           </body>
+           </html>

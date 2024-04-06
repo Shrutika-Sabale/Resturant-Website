@@ -1,0 +1,284 @@
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 5px solid black;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.view-ninth .mask-1,
+.view-ninth .mask-2{
+	background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    width: 350px;
+	background: rgba(119,0,36,0.5);
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+.view-ninth .mask-1 { 
+    left: auto;
+    right: 0px;
+    transform: rotate(56.5deg) translateX(-180px);
+    transform-origin: 100% 0%;
+}
+.view-ninth .mask-2 { 
+    top: auto;
+    bottom: 0px;
+    transform: rotate(56.5deg) translateX(180px);
+    transform-origin: 0% 100%;
+}
+.view-ninth .content{
+    background: rgba(0,0,0,0.9);
+    height: 0px;
+    opacity: 0.5;
+    width: 200px;
+    overflow: hidden;
+    transform: rotate(-33.5deg) translate(-112px,166px);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease-in-out 0.3s;
+}
+.view-ninth h2{
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.view-ninth a.info{
+    display: none;
+}
+.view-ninth:hover .content{
+    height: 120px;
+    width: 300px;
+    opacity: 0.9;
+    top: 40px;
+    transform: rotate(0deg) translate(0px,0px);
+}
+.view-ninth:hover .mask-1,
+.view-ninth:hover .mask-2{
+	transition-delay: 0s;
+}
+.view-ninth:hover .mask-1{
+    transform: rotate(56.5deg) translateX(1px);
+}
+.view-ninth:hover .mask-2 {  
+    transform: rotate(56.5deg) translateX(-1px);
+}
+/* image dropdown*/
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219,127,8, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+/*10*/
+.view-tenth img { 
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+.view-tenth .mask { 
+    background-color: rgba(255, 231, 179, 0.3); 
+    transition: all 0.5s linear;
+    opacity: 0;
+}	
+.view-tenth h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #333;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.view-tenth p {
+    color: #333;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.view-tenth a.info { 
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.view-tenth:hover img { 
+	transform: scale(10);
+    opacity: 0;
+}
+.view-tenth:hover .mask { 
+	opacity: 1;
+}																			 
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info{ 
+    transform: scale(1);
+    opacity: 1;
+}
+/*6*/
+.view-sixth img { 
+	transition: all 0.4s ease-in-out 0.5s; 
+}
+.view-sixth .mask{ 
+	background-color: rgba(146,96,91,0.5);
+	opacity:0;
+	transition: all 0.3s ease-in 0.4s;
+}
+.view-sixth h2{
+	opacity:0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.view-sixth p { 
+	opacity:0;
+    transform: scale(10);
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.view-sixth a.info { 
+	opacity:0;
+    transform: translateY(100px);
+	transition: all 0.3s ease-in-out 0.1s;
+}
+.view-sixth:hover .mask {  
+	opacity:1; 
+	transition-delay: 0s;
+}																			 
+.view-sixth:hover img { 
+	transition-delay: 0s; 
+}
+.view-sixth:hover h2 { 
+	opacity: 1;
+    transform: scale(1);
+	transition-delay: 0.1s;
+}
+.view-sixth:hover p { 
+	opacity:1; 
+    transform: scale(1);
+	transition-delay: 0.2s;
+}
+.view-sixth:hover a.info { 
+	opacity:1;
+    transform: translateY(0px);
+	transition-delay: 0.3s;
+}
+/*3*/
+.view-third img { 	
+    transition: all 0.2s ease-in; 
+}
+.view-third .mask { 
+	background-color: rgba(0,0,0,0.6);
+	opacity: 0;
+	transform: translate(460px, -100px) rotate(180deg);
+	transition: all 0.2s 0.4s ease-in-out;
+}
+.view-third h2{
+	transform: translateY(-100px);
+	transition: all 0.2s ease-in-out;
+}
+.view-third p { 
+	transform: translateX(300px) rotate(90deg);
+	transition: all 0.2s ease-in-out;
+}
+.view-third a.info { 
+	transform: translateY(-200px);
+	transition: all 0.2s ease-in-out;
+} 
+.view-third:hover .mask { 
+	opacity:1; 
+	transition-delay: 0s;							 
+	transform: translate(0px, 0px);
+}
+.view-third:hover h2 { 
+	transform: translateY(0px); 
+	transition-delay: 0.5s; 
+}
+.view-third:hover p	{ 
+    transform: translateX(0px) rotate(0deg);
+	transition-delay: 0.4s;
+}
+.view-third:hover a.info { 
+	transform: translateY(0px);
+	transition-delay: 0.3s;
+}
