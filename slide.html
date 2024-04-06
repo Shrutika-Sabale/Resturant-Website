@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <link rel="stylesheet" href="C:\Users\91965\Documents\CSS\css mp\mpstyle.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>CSSMP</title>
+ 
+</head>
+
+<body>
+ 
+  <nav class="navbar">
+ <!-- LOGO -->
+<div class="logo"><u>RESTURANT <i class="fa-solid fa-utensils"></i></u></div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+   
+   <!-- USING CHECKBOX HACK -->
+   <div class="ck1">
+   <input type="checkbox" id="checkbox_toggle" />
+   <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  </div>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <!--<i class="fa-light fa-user-chef fa-xs" style="color: #ffffff;"></i>-->
+        <li><a href="c:\Users\91965\Documents\CSS\css mp\slide.html">Home <i class="fa-solid fa-house-chimney" style="color: #ffffff;"></i></a></li>
+        <li><a href="c:\Users\91965\Documents\CSS\css mp\ab.html">About Us <i class="fa-regular fa-address-card" style="color: #f5f5f5;"></i></a></li>
+        <li><a href="C:\Users\91965\Documents\CSS\css mp\mainmenu.html">Menu <i class="fa-solid fa-bars" style="color: #ffffff;"></i></a></li>
+        <li><a href="C:\Users\91965\Documents\CSS\css mp\mpp.html">Specialtie's <i class="fa-sharp fa-solid fa-star" style="color: #fcfcfc;"></i></a></li>
+        <li><a href="C:\Users\91965\Documents\CSS\css mp\cont.html">Contact Us <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i></a></li>
+      </div>
+    </ul>
+  </nav>
+
+<div class="slidercontainer">
+    <div class="showSlide fade">
+      <img src= "C:\Users\91965\Pictures\s4.jpg"/> 
+        </div>
+    </div>
+    <div class="showSlide fade">
+        <img src="C:\Users\91965\Pictures\s1.jpg"/>
+    </div>
+    <div class="showSlide fade">
+        <img src="C:\Users\91965\Pictures\s2.jpg"/>
+          </div>
+    <div class="showSlide fade">
+        <img src="C:\Users\91965\Pictures\s3.jpg"/>
+          </div>
+    <!-- Navigation arrows -->
+<a class="left" onclick="nextSlide(-1)"><</a>
+  <a class="right" onclick="nextSlide(1)">></a>
+
+        <script>
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+  //sildeshow
+var slide_index = 1;
+          displaySlides(slide_index);
+  
+          function nextSlide(n) {
+            displaySlides(slide_index += n);
+          }
+  
+          function currentSlide(n) {
+              displaySlides(slide_index = n);
+          }
+          
+          function displaySlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("showSlide");
+              if (n > slides.length) { slide_index = 1 }
+              if (n < 1) { slide_index = slides.length }
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              slides[slide_index - 1].style.display = "block";
+          }
+
+
+          </script>
+</body>
+</html>

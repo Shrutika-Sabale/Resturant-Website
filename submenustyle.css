@@ -1,0 +1,100 @@
+/* bveg */
+.heading h1{
+    background-color: #050d18;
+    margin-top: 1rem!important;
+    font-size: 7rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    color:darkorange;
+    margin-top: 40%;
+    font-size:50px
+  }
+  .wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+  
+  .wrapper h1{
+    margin-top: 7rem!important;
+    font-size: 7rem;
+    font-family: 'Forum', cursive;
+    font-weight: 600;
+    color: #267d0d;
+    margin-top: 40%;
+    font-size:50px
+  }
+  .wrapper p{
+    font-size: 100;
+    text-align: center;
+    color: #000000;
+    margin-bottom:-40px;
+  }
+  .content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 200pxx;
+    margin-top:-10px;
+  
+  }
+  .card{
+    margin-top:10px;
+    min-height: 300px;
+    width: 320px;
+    padding: 10px;
+   border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background:lightyellow;
+    margin: 10px 5px;
+  
+  }
+  .card h2{
+    font-size: 170%;
+    margin-bottom: 12px;
+    font-weight: 200;
+    text-align: center;
+  }
+  .card p{
+    color: #6c757d;
+    text-align: center;
+  }
+
+  @media(max-width:950px)
+  {
+    .wrapper{
+      padding:25px;
+    }
+    .wrapper h1{
+      font: size 2.5em;
+      font-weight: 600;
+    }
+    .content-box{
+      flex-direction: column;
+      width: 100%;
+    }
+    .card{
+      min-width:100px;
+      margin: 10px;
+    }
+  }
+  .checked {
+      color:orange;
+      position:static;
+    }
+    .span
+    {
+      display: flex;
+      margin-left: 1px;
+    }
+    .wish-icon {
+      color:red;
+      translate:200px ;
+     
+      }
+  

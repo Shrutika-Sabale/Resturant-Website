@@ -1,0 +1,107 @@
+.view {
+    width: 350px;
+    height: 250px;
+    margin: 05px;
+    float: left;
+    border: 5px solid black;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    animation: fadeInUp 10s ease;}
+    @keyframes fadeInRight{
+      0%{
+          opacity: 0;
+          transform: translateX(-50px);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0px);
+      }
+    }
+  .view .mask, .view .content {
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+  }
+ 
+  .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+  }
+  .view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    padding: 10px 10px 20px;
+    text-align: center
+  }
+
+  .view-ninth .mask-1,
+  .view-ninth .mask-2{
+  background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    width: 360px;
+  background: rgba(119,0,36,0.5);
+  opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+  }
+  .view-ninth .mask-1 { 
+    left: auto;
+    right: 0px;
+    transform: rotate(56.5deg) translateX(-180px);
+    transform-origin: 100% 0%;
+  }
+  .view-ninth .mask-2 { 
+    top: auto;
+    bottom: 0px;
+    transform: rotate(56.5deg) translateX(180px);
+    transform-origin: 0% 100%;
+  }
+  .view-ninth .content{
+    background: rgba(0,0,0,0.9);
+    height: 0px;
+    opacity: 0.2;
+    width: 200px;
+    overflow: hidden;
+    transform: rotate(-33.5deg) translate(-112px,166px);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease-in-out 0.3s;
+  }
+  .view-ninth h2{
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .view-ninth a.info{
+    display: none;
+  }
+  .view-ninth:hover .content{
+    height: 180px;
+    width: 341px;
+    opacity: 0.9;
+    top: 40px;
+    transform: rotate(0deg) translate(0px,0px);
+  }
+  .view-ninth:hover .mask-1,
+  .view-ninth:hover .mask-2{
+  transition-delay: 0s;
+  }
+  .view-ninth:hover .mask-1{
+    transform: rotate(55.13deg) translateX(1px);
+  }
+  .view-ninth:hover .mask-2 {  
+    transform: rotate(55.13deg) translateX(-1px);
+  }

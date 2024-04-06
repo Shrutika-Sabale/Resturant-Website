@@ -1,0 +1,174 @@
+/* maimenu*/
+
+.heading h1{
+    background-color: #050d18;
+    margin-top: 1rem!important;
+    font-size: 7rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight:200;
+  
+    color: #c6e610;
+    margin-top: 40%;
+    font-size:50px
+  }
+  .wrapper1{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+     }
+  
+  .wrapper1 h1{
+    margin-top:1rem!important;
+    font-size: 7rem; 
+    font-family: 'Forum', cursive;
+    font-weight: 600;
+    color:black;
+    margin-top: 40%;
+    font-size:50px
+  }
+  .wrapper1 p{
+    font-size: 100;
+    text-align: center;
+    color: #000000;
+    margin-bottom:20px;
+  }
+  .content-box1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100pxx;
+    margin-top: -30px;
+    margin-bottom:-40px;
+  }
+  .card1{
+    min-height:400px;
+    width: 350px;
+    padding:-5px;
+    border-radius: 10px;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.9s;
+    background-color:lightyellow;
+    margin:50px 8px;
+  
+  }
+  .card1 h2{
+    font-size: 170%;
+    margin-bottom: 12px;
+    font-weight: 200;
+    text-align: center;
+  }
+  .card1 p{
+    color: #6c757d;
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+
+  
+  .action_btn {
+   padding: 5px;
+    margin: 0 auto;
+    color:blue;
+   
+    margin-bottom:-10px;
+   
+  }
+  .card1:nth-child(1):hover{
+    background:linear-gradient(45deg, rgb(132, 8, 112) 0% ,
+                                      rgba(66, 220, 189, 0.8) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card1:nth-child(2):hover{
+    background:linear-gradient(45deg, rgba(221, 37, 37, 0.968) 0% ,
+                                      rgba(198, 213, 39, 0.929) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  .card1:nth-child(3):hover{
+    background:linear-gradient(45deg, rgba(19, 170, 221, 0.8) 0% ,
+                                      rgba(170, 187, 116, 0.8) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  .card1:nth-child(4):hover{
+    background:linear-gradient(45deg, rgba(219, 74, 142, 0.968) 0% ,
+                                      rgba(58, 1, 56, 0.929) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  .card1:nth-child(5):hover{
+    background:linear-gradient(45deg, rgba(224, 104, 48, 0.8) 0% ,
+                                      rgba(112, 220, 66, 0.8) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card1:nth-child(6):hover{
+    background:linear-gradient(45deg, rgba(211, 217, 33, 0.968) 0% ,
+                                      rgba(3, 149, 127, 0.929) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  .card1:nth-child(7):hover{
+    background:linear-gradient(45deg, rgba(19, 170, 221, 0.8) 0% ,
+                                      rgba(246, 1, 1, 0.8) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  .card1:nth-child(8):hover{
+    background:linear-gradient(45deg, rgba(192, 1, 147, 0.968) 0% ,
+                                      rgba(223, 206, 224, 0.929) 100%);
+                                     
+    background-size:cover;
+    transform: translateY(-10px);
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  @media(max-width:950px)
+  {
+    .wrapper1{
+      padding:25px;
+    }
+    .wrapper1 h1{
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+    .content-box1{
+      flex-direction: column;
+      width: 100%;
+    }
+    .card1{
+      min-width: 300px;
+      margin: 10px;
+
+    }
+  }
+  /*  end maimenu*/
+  @font-face{
+    font-family: mg;
+    src: url("f1.ttf.ttf");
+  }
+  #h11{
+    font-family:mg;
+  }
